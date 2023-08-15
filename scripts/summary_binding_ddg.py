@@ -1,8 +1,7 @@
 ## This script summarises the results from the binding_ddg.py calculations. Run this script in the directory containing
 ## the folders from binding_ddg.py
 
-# Useage:
-# python summary_binding_ddg.py
+# Useage: python summary_binding_ddg.py
 
 import os, sys
 import glob
