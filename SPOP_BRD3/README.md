@@ -6,7 +6,9 @@ See SPOP-BRD3_analysis.ipynb for analysis
 
 ### This code makes use of darwinian shift: 
 
-* Hall et al. Mutations observed in somatic evolution reveal underlying gene mechanisms doi: https://doi.org/10.1038/s42003-023-05136-y
+* Hall et al. Mutations observed in somatic evolution reveal underlying gene mechanisms. doi: https://doi.org/10.1038/s42003-023-05136-y
+
+* For installation: https://github.com/michaelhall28/darwinian_shift
 
 ### TCGA data can be downloaded from Xenabrowser here:
 
