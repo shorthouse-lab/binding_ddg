@@ -1,4 +1,7 @@
+## Script to repair and energy minimize a structure using foldx
+
 ## Usage: python repair_multi.py pdbfile.pdb
+
 ## Alter repairnumber to change number of repeats, adjust foldx_location to the directory containing the foldx executable
 ## Output: A file called pdbfile_Repair_final.pdb where pdbfile is the original file name
 
