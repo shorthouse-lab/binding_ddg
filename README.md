@@ -15,7 +15,7 @@ Included are reproducible calculations and analysis to interpret and understand 
 
 #### Also included in this repository are examples of use-cases and analysis:
 
-* Barnase_barstar - Calculation of the effects of single and small groups of mutations on binding DDG
+* Barnase-barstar - Calculation of the effects of single and small groups of mutations on binding DDG
 
 * SPOP-BRD3 - Calculation of evidence of mutational selection of binding DDG in large-scale genomic data using an expected distribution
 
