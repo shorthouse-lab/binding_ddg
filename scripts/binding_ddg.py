@@ -6,6 +6,10 @@
 ## proteinchain and ligandchain below allow you to alter which chain of the pdb is protein vs ligand
 ## residuedistance is the distance in angstroms around the ligand you want to mutate
 
+### If you are using parameters for a ligand or molecule that isnt natively recognised by FoldX
+### You need to enable the commented lines 80-83, and change the name to that of the ligand file
+### This will allow FoldX to copy the file into the correct locations
+
 import Bio.PDB
 import os
 import shutil
