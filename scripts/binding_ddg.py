@@ -17,7 +17,7 @@ import sys
 
 proteinchain = "A"
 ligandchain = "C"
-foldxdir = "~/Foldx_location/foldx"
+foldxdir = "~/Foldx_location"
 residuedistance = 10
 
 
@@ -97,14 +97,14 @@ for residue in residues_nearby:
     for item in (mutation_list):
         with open("individual_list_" + item + ".txt", "w") as text_file:
 	    text_file.write(item + ";")
-        buildmodel = foldxdir + " --command=BuildModel --pdb=pdbfile.pdb --numberOfRuns=1 --pH=7 --vdwDesign=2 --ionStrength=0.05 --water=CRYSTAL --mutant-file=individual_list_" + item + ".txt"
+        buildmodel = foldxdir + "/foldx --command=BuildModel --pdb=pdbfile.pdb --numberOfRuns=1 --pH=7 --vdwDesign=2 --ionStrength=0.05 --water=CRYSTAL --mutant-file=individual_list_" + item + ".txt"
         os.system(buildmodel)
 	os.rename("WT_pdbfile_1.pdb", item + "_WT_pdbfile.pdb")
 	os.rename("pdbfile_1.pdb", item + "_MUT_pdbfile.pdb")
 	
-	analysecomplex_WT = foldxdir + " --command=AnalyseComplex --pdb=" + item + "_WT_pdbfile.pdb --analyseComplexChains=" + proteinchain + "," + ligandchain + " --pH=7 --vdwDesign=2 --ionStrength=0.05 --water=CRYSTAL"	    	    
+	analysecomplex_WT = foldxdir + "/foldx --command=AnalyseComplex --pdb=" + item + "_WT_pdbfile.pdb --analyseComplexChains=" + proteinchain + "," + ligandchain + " --pH=7 --vdwDesign=2 --ionStrength=0.05 --water=CRYSTAL"	    	    
         os.system(analysecomplex_WT)
-	analysecomplex_MUT = foldxdir + " --command=AnalyseComplex --pdb=" + item + "_MUT_pdbfile.pdb --analyseComplexChains=" + proteinchain + "," + ligandchain  + " --pH=7 --vdwDesign=2 --ionStrength=0.05 --water=CRYSTAL"
+	analysecomplex_MUT = foldxdir + "/foldx --command=AnalyseComplex --pdb=" + item + "_MUT_pdbfile.pdb --analyseComplexChains=" + proteinchain + "," + ligandchain  + " --pH=7 --vdwDesign=2 --ionStrength=0.05 --water=CRYSTAL"
         os.system(analysecomplex_MUT)
     os.chdir("../")
 
