@@ -9,7 +9,7 @@ import sys,os, shutil
 
 pdbfile = sys.argv[1]
 repairnumber = 10
-foldx_location = "~/Foldx_Location/Foldx"
+foldx_location = "~/Foldx_Location"
 pdbfile_base = pdbfile.split(".")[0]
 
 # do first repair
