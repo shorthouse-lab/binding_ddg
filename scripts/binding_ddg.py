@@ -17,7 +17,7 @@ import sys
 
 proteinchain = "A"
 ligandchain = "C"
-foldxdir = "/home/nmrbox/0017/dshorthouse/Foldx/foldx"
+foldxdir = "~/Foldx_location/foldx"
 residuedistance = 10
 
 
