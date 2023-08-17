@@ -3,6 +3,8 @@
 
 This repository contains python scripts for running binding DDG calculations using FoldX (https://foldxsuite.crg.eu)
 
+In order to run calculation, a FoldX license will need to be obtained, and the FoldX binary downloaded. The included scripts reference this binary, so make sure to replace the relevant line in each script to where you have placed yours.
+
 Included are reproducible calculations and analysis to interpret and understand how missense mutations impact binding of proteins to each other, small molecules, and DNA.
 
 #### Within the "scripts" directory there are 3 scripts that do a majority of the work:
