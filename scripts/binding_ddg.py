@@ -57,9 +57,7 @@ residuelist = []
 for atom in ligand:
     close_atoms = ns.search(atom.coord, residuedistance, level="R")
     for residue in close_atoms:
-        if residue.get_full_id()[2] == ligandchain:
-	    continue
-        else:
+        if residue.get_full_id()[2] == proteinchain:
             restype = residue.get_resname()
             resid = residue.id[1]
 	    residuelist.append((restype, resid))
@@ -91,7 +89,7 @@ for residue in residues_nearby:
 	if aa == residue_code:
 	    continue
         else:
-            mutantcode = residue_code + "A" + str(residue[1]) + aa
+            mutantcode = residue_code + proteinchain + str(residue[1]) + aa
 	    mutation_list.append(mutantcode)
 	   
     for item in (mutation_list):
